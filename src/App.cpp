@@ -27,19 +27,19 @@ bool App::OnInit()
 
     //////////////////////////////////////
     cout << "this application bloody runs" << endl;
-    // int argc = 2;
-    // if (argc != 2)
-    // {
-    //     std::cout << "input not given" << std::endl;
-    // }
-    // else
-    // {
-    //     std::cout << "displaying image" << std::endl;
-    //     Mat image = imread("Jr.jpg", 1);
-    //     // imshow("img", image);
-    // }
-    // cv::waitKey(0);
-    /////////////////////////////////////
+    int argc = 2;
+    if (argc != 2)
+    {
+        std::cout << "input not given" << std::endl;
+    }
+    else
+    {
+        std::cout << "displaying image" << std::endl;
+        Mat image = imread("Jr.jpg", 1);
+        // imshow("img", image);
+    }
+    cv::waitKey(0);
+    ///////////////////////////////////
 
     return true;
 }
