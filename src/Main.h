@@ -1,10 +1,15 @@
 #include <wx-3.1/wx/wx.h>
 
-#include <wx-3.1/wx/wx.h>
 class Main : public wxFrame
 {
-private:
-    /* data */
+protected:
+    void OnAbout(wxCommandEvent &event);
+    void OnQuit(wxCommandEvent &event);
+
+    DECLARE_EVENT_TABLE();
+    void initializeMenuBar();
+    void initializeStatusBar();
+
 public:
     Main(wxWindow *parent,
          wxWindowID id,
